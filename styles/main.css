@@ -64,4 +64,38 @@
 html {
   font-size: 62.5%; }
 
+html {
+  background-color: rgba 0, 0, 0, 0.5;
+  text-align: center; }
+
+.nav__top {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem;
+  padding-right: 5rem; }
+
+.heading {
+  text-align: center; }
+
+.container {
+  display: inline-block;
+  text-align: center;
+  list-style: none; }
+
+.image__text {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: sans-serif; }
+
+.school {
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  width: 50%;
+  height: 50%; }
+
+.shark {
+  width: 50%;
+  height: 50%; }
+
 /*# sourceMappingURL=main.css.map */
