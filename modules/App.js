@@ -10,7 +10,7 @@ export default React.createClass({
           <li><Link to="/home">Home</Link></li>
           <li><Link to="/instructors">Instructors</Link></li>
         </ul>
-          <img type="image" onClick="DoSomething" src={'http://rodrigopinheirobjj.com/wp-content/uploads/2015/06/rp_bjj_academy_01.jpg'} />
+          <a href={'http://rodrigopinheirobjj.com/wp-content/uploads/2015/06/rp_bjj_academy_01.jpg'} />
           <img src={'http://www.teamsharkbjj.com/wp-content/uploads/2015/12/12341098_857432434354480_1637971756259014799_n.jpg'} />
 
         {this.props.children}
