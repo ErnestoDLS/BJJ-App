@@ -82,20 +82,18 @@ html {
   text-align: center;
   list-style: none; }
 
-.image__text {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: sans-serif; }
+.image__box {
+  border-style: solid;
+  border-width: thin; }
 
-.school {
+.image__button {
+  display: block; }
+
+.school__logo {
   display: inline-block;
   text-align: center;
   list-style: none;
-  width: 50%;
-  height: 50%; }
-
-.shark {
-  width: 50%;
-  height: 50%; }
+  width: 60%;
+  height: 60%; }
 
 /*# sourceMappingURL=main.css.map */

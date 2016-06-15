@@ -8,20 +8,20 @@ export default React.createClass({
       <div>
         <h1 className="heading">Jiu-Jits App!</h1>
         <ul role="nav">
-          <li className="nav__top"><Link to="/home">Home</Link></li>
-          <li className="nav__top"><Link to="/about">About</Link></li>
+          <li className="nav__top"><Link to="/home" activeClassName="active">Home</Link></li>
+          <li className="nav__top"><Link to="/about" activeClassName="active">About</Link></li>
         </ul>
         <section className="container">
             <li>
-              <div className="image__text">
-                <h2>Click</h2>
-                <img className="school" type="image" src='../modules/images/rpbjj-logo.jpg' />
+              <div className="image__box">
+                <button className="image__button" type="button">Click Me!</button>
+                <img className="school__logo" type="image" src='../modules/images/rpbjj-logo.jpg' />
               </div>
             </li>
             <li>
-              <div className="image__text">
-                <h2>Click</h2>
-                  <img className="shark" type="image" src='../modules/images/teamshark-logo.jpg' />
+              <div className="image__box">
+                <button className="image__button" type="button">Click Me!</button>
+                  <img className="school__logo" type="image" src='../modules/images/teamshark-logo.jpg' />
               </div>
             </li>
         </section>
