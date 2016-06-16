@@ -6,7 +6,7 @@ export default React.createClass({
   getDefaultProps(){
     return {
       rpbjj: {
-        name: "Rodrigo Pinheiro"
+        name: "Rodrigo Pinheiro",
         classes: [
           {
             name: "Bjj Fundamentals",
@@ -16,7 +16,7 @@ export default React.createClass({
           {
             name: "Advanced Bjj",
             length: 20,
-            description: "This is the next step for you!"
+            description: "This is the next step for you!",
             vidoes: [
               {
                 name: "Attacking the turtle",
@@ -32,12 +32,12 @@ export default React.createClass({
         location: "4563 N. Loop 1604 W. Suite 1215 San Antonio, TX 78249"
       },
       teamshark: {
-        name: "Team Shark"
+        name: "Team Shark",
         classes: [
           {
             name: "Beginner's Bjj",
             length: 20,
-            description: "Bjj for beginners"
+            description: "Bjj for beginners",
             videos: [
               {
                 name: "Pass the guard",
@@ -58,7 +58,7 @@ export default React.createClass({
           }
 
         ],
-        location: "203493 Culebra, San Antonio, TX"
+        location: "2211 NW Military Hwy #126, San Antonio, TX 78213"
       }
     }
   },
@@ -67,11 +67,12 @@ export default React.createClass({
       <article>
         <h2>this.props[this.props.params.id].name</h2>
         {
-          this.props[this.props.params.id].classes.map(function(class){
+          this.props[this.props.params.id].classes.map((clas) => {
             return <li>
-              <h3>class.name</h3>
-              this.props.[this.props.id].classes.videos.map(function(videos){
-                return <h3>class.videos</h3>
+              <h3>clas.name</h3>
+              // this.props.[this.props.id].classes.videos.map((videos) => {
+              //   return <h3>clas.videos</h3>
+              //   
               })
             </li>
           })
