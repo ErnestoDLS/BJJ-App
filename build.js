@@ -3,14 +3,15 @@ import { render } from 'react-dom'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
 import App from './modules/App'
 import Home from './modules/Home'
-import About from './modules/About'
+import { Link } from 'react-router'
+import Gym from './modules/Gym'
 
 
 render((
   <Router history={browserHistory}>
     <Route path="/" component={App}>
       <Route path="/home" component={Home}/>
-      <Route path="/about" component={About}/>
+      <Route path="/:id" component={Gym}/>
     </Route>
   </Router>
 ), document.getElementById('app'))

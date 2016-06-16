@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 
+
 export default React.createClass({
   render() {
     return (
@@ -14,16 +15,16 @@ export default React.createClass({
         <section className="container">
             <li>
               <div className="image__box">
-                <Link className="image__link" to="/about">Click</Link>
+                <Link className="image__link" to="/rpbjj">Click</Link>
                 <img className="school__logo" type="image" src='../modules/images/rpbjj-logo.jpg' />
-                <button type="button">Join</button>
+                <button type="button">Join class!</button>
               </div>
             </li>
             <li>
               <div className="image__box">
-                <Link className="image__link" to="/about">Click</Link>
+                <Link className="image__link" to="/teamshark">Click</Link>
                   <img className="school__logo" type="image" src='../modules/images/teamshark-logo.jpg' />
-                  <button type="button">Join</button>
+                  <button type="button">Join class!</button>
               </div>
             </li>
         </section>
