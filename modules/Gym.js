@@ -23,8 +23,8 @@ export default React.createClass({
                 url: "https://www.youtube.com/watch?v=bql8UNTyDFY"
               },
               {
-                name: "Lasso guard",
-                url: "https://youtube/link"
+                name: "Leg Lasso Spider Guard Smash Pass",
+                url: "https://www.youtube.com/watch?v=yF3_FsKMUYM"
               }
             ]
           }
@@ -40,8 +40,16 @@ export default React.createClass({
             description: "Bjj for beginners"
             videos: [
               {
-                name: "Pass the guard".
+                name: "Pass the guard",
                 url: "https://www.youtube.com/watch?v=z42ZZ5IvS14"
+              },
+              {
+                name: "Guard Pass 101",
+                url: "https://www.youtube.com/watch?v=X3VVVeobzc8"
+              },
+              {
+                name: "Transition from Side Control to Mount",
+                url: "https://www.youtube.com/watch?v=3Lda2u99r_o"
               }
             ]
           },
@@ -64,7 +72,6 @@ export default React.createClass({
               <h3>class.name</h3>
               this.props.[this.props.id].classes.videos.map(function(videos){
                 return <h3>class.videos</h3>
-                
               })
             </li>
           })
