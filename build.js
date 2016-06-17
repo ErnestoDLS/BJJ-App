@@ -9,9 +9,8 @@ import Gym from './modules/Gym'
 
 render((
   <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <Route path="/home" component={Home}/>
-      <Route path="/:id" component={Gym}/>
-    </Route>
+    <Route path="/" component={App}/>
+    <Route path="/home" component={Home}/>
+    <Route path="/gym/:id" component={Gym}/>
   </Router>
 ), document.getElementById('app'))

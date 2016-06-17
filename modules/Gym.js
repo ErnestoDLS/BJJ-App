@@ -11,13 +11,23 @@ export default React.createClass({
           {
             name: "Bjj Fundamentals",
             length: 20,
-            description: "This is where to start if you have no idea what BJJ is"
+            description: "This is where to start if you have no idea what BJJ is",
+            videos: [
+              {
+                name: "Attacking the turtle",
+                url: "https://www.youtube.com/watch?v=bql8UNTyDFY"
+              },
+              {
+                name: "Leg Lasso Spider Guard Smash Pass",
+                url: "https://www.youtube.com/watch?v=yF3_FsKMUYM"
+              }
+            ]
           },
           {
             name: "Advanced Bjj",
             length: 20,
             description: "This is the next step for you!",
-            vidoes: [
+            videos: [
               {
                 name: "Attacking the turtle",
                 url: "https://www.youtube.com/watch?v=bql8UNTyDFY"
@@ -65,15 +75,17 @@ export default React.createClass({
   render(){
     return(
       <article>
-        <h2>this.props[this.props.params.id].name</h2>
+        <h2>{this.props.params.id.name}</h2>
         {
           this.props[this.props.params.id].classes.map((clas) => {
             return <li>
-              <h3>clas.name</h3>
-              // this.props.[this.props.id].classes.videos.map((videos) => {
-              //   return <h3>clas.videos</h3>
-              //   
-              })
+              <h3>{clas.name}</h3>
+              {console.log(clas)}
+              {clas.videos.map((video) =>{
+                return <h3>{video.name}</h3>
+
+
+              })};
             </li>
           })
         }
