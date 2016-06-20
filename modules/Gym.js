@@ -62,9 +62,6 @@ export default React.createClass({
                 url: "https://www.youtube.com/watch?v=3Lda2u99r_o"
               }
             ]
-          },
-          {
-
           }
 
         ],
@@ -83,6 +80,8 @@ export default React.createClass({
               {console.log(clas)}
               {clas.videos.map((video) =>{
                 return <h3>{video.name}</h3>
+
+
 
 
               })};
