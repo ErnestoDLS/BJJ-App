@@ -7,7 +7,7 @@ export default React.createClass({
     return {
       rpbjj: {
         name: "Rodrigo Pinheiro",
-        image: "../modules/images/rpbjj-cover.jpg",
+        image: "/Public/images/rpbjj-cover.jpg",
         classes: [
           {
             name: "Bjj Fundamentals",
@@ -44,7 +44,7 @@ export default React.createClass({
       },
       teamshark: {
         name: "Team Shark",
-        image:"../modules/images/teamshark-daniel.jpg",
+        image:"/Public/images/teamshark-daniel.jpg",
         classes: [
           {
             name: "Beginner's Bjj",
@@ -75,6 +75,10 @@ export default React.createClass({
     return(
       <article>
         <h2>{this.props.params.id.name}</h2>
+        <h2>{this.props.params.id}</h2>
+        this.props[this.props.params.id].image
+            <img src={this.props[this.props.params.id].image}></img>
+
         {
           this.props[this.props.params.id].classes.map((clas) => {
             return <li>
@@ -82,11 +86,6 @@ export default React.createClass({
               {console.log(clas)}
               {clas.videos.map((video) =>{
                 return <h2>{video.name}</h2>
-
-
-
-
-
               })};
             </li>
           })

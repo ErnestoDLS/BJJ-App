@@ -16,14 +16,14 @@ export default React.createClass({
             <li>
               <div className="image__box">
                 <Link className="image__rp" to="/gym/rpbjj">Click</Link>
-                <img className="school__logo" type="image" src='../modules/images/rpbjj-logo.jpg' />
+                <img className="school__logo" type="image" src='/Public/images/rpbjj-logo.jpg' />
                 <button type="button">Join class!</button>
               </div>
             </li>
             <li>
               <div className="image__box">
                 <Link className="image__shark" to="/gym/teamshark">Click</Link>
-                  <img className="school__logo" type="image" src='../modules/images/teamshark-logo.jpg' />
+                  <img className="school__logo" type="image" src='/Public/images/teamshark-logo.jpg' />
                   <button type="button">Join class!</button>
               </div>
             </li>
