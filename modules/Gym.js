@@ -7,6 +7,7 @@ export default React.createClass({
     return {
       rpbjj: {
         name: "Rodrigo Pinheiro",
+        image: "../modules/images/rpbjj-cover.jpg",
         classes: [
           {
             name: "Bjj Fundamentals",
@@ -43,6 +44,7 @@ export default React.createClass({
       },
       teamshark: {
         name: "Team Shark",
+        image:"../modules/images/teamshark-daniel.jpg",
         classes: [
           {
             name: "Beginner's Bjj",
@@ -76,10 +78,11 @@ export default React.createClass({
         {
           this.props[this.props.params.id].classes.map((clas) => {
             return <li>
-              <h3>{clas.name}</h3>
+              <h2>{clas.name}</h2>
               {console.log(clas)}
               {clas.videos.map((video) =>{
-                return <h3>{video.name}</h3>
+                return <h2>{video.name}</h2>
+
 
 
 

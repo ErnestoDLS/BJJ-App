@@ -67,6 +67,9 @@ html {
 html {
   text-align: center; }
 
+li {
+  list-style: none; }
+
 .nav__top {
   list-style: none;
   display: inline-block;
@@ -85,12 +88,21 @@ html {
   border-style: solid;
   border-width: thin; }
 
-.image__link {
+.image__rp {
   display: block;
   padding-top: 1rem;
   opacity: 1;
   color: red;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  background-color: #f16e03; }
+
+.image__shark {
+  display: block;
+  padding-top: 1rem;
+  opacity: 1;
+  color: red;
+  text-transform: uppercase;
+  background-color: #000000; }
 
 .school__logo {
   display: inline-block;
